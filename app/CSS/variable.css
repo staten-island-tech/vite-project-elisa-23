@@ -1,0 +1,79 @@
+:root {
+    /* all */
+    --cool-black: #28292b;
+    --light-tan: #ead4b6;
+    --dark-gold: #b07f25;
+
+    /* holiday */
+
+
+    /* halloween */
+
+
+    /* christmas */
+
+
+    /* best-seller */
+}
+
+.all {
+    --primary: var(--cool-black);
+    --secondary: var(--light-tan);
+    --accent: var(--dark-gold);
+}
+
+.holiday-sale {
+    --primary: ;
+    --secondary: ;
+    --accent: ;
+}
+
+.halloween {
+    --primary: ;
+    --secondary: ;
+    --accent: ;
+}
+
+.christmas {
+    --primary: ;
+    --secondary: ;
+    --accent: ;
+}
+
+.best-seller {
+    --primary: ;
+    --secondary: ;
+    --accent: ;
+}
+
+.genre {
+    --primary: ;
+    --secondary: ;
+    --accent: ;
+}
+
+.informational {
+    --primary: ;
+    --secondary: ;
+    --accent: ;
+}
+
+.horror {
+    --primary: ;
+    --secondary: ;
+    --accent: ;
+}
+
+.fantasy {
+    --primary: ;
+    --secondary: ;
+    --accent: ;
+}
+
+.romance {
+    --primary: ;
+    --secondary: ;
+    --accent: ;
+}
+
+#f9cece #1b1c1c #d40609
