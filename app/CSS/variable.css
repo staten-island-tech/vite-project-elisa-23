@@ -1,79 +1,78 @@
 :root {
-    /* all */
-    --cool-black: #28292b;
-    --light-tan: #ead4b6;
-    --dark-gold: #b07f25;
+    /* main color scheme - dark */
+    --midnight-blue: #2c3e50;
+    /* background */
+    --warm-gray: #bdc3c7;
+    /* text */
+    --soft-gold: #f1c40f;
+    /* accent */
+    --lavender: #9b59b6;
+    /* secondary */
 
-    /* holiday */
+    /* -------------------------------- */
 
+    /* main color scheme - light */
+    --soft-cream: #f7f3e9;
+    /* background */
+    --deep-indigo: #3a405a;
+    /* text */
+    /* accent - use soft-gold */
+    --dusty-lavender: #cbb5d3;
+    /* secondary */
 
-    /* halloween */
+    /* -------------------------------- */
+    /* CARD COLOR SCHEMES */
+    /* -------------------------------- */
 
+    /* sepia mode - cozy/vintage color scheme */
+    --antique-white: #f4ecd8;
+    /* background */
+    --dark-charcoal: #3b3b3b;
+    /* text */
+    --burnished-gold: #c89f5d;
+    /* accent */
+    --olive-green: #a6a57b;
+    /* secondary */
 
-    /* christmas */
+    /* -------------------------------- */
 
+    /* twilight mode - use for variable color scheme */
+    --soft-lavender-gray: #d3d0e7;
+    /* background */
+    --charcoal: #2e2e2e;
+    /* text */
+    --muted-gold: #d4af37;
+    /* accent */
+    --dusky-blue: #7289ab;
+    /* secondary */
 
-    /* best-seller */
+    /* -------------------------------- */
+
+    /* moonlight mode - use for variable color scheme */
+    --cool-midnight-blue: #1e2a38;
+    /* background */
+    --soft-white: #f5f5f5;
+    /* text */
+    --icy-blue: #8fb8de;
+    /* accent */
+    --pale-silver: #c0c5ce;
+    /* secondary */
+
+    /* -------------------------------- */
+
+    /* autumn mode - use for the fall season */
+    --warm-beige: #f8f0e3;
+    /* background light mode */
+    --deep-walnut-brown: #2b1d17;
+    /* background dark mode */
+    --deep-expresso: #4b2e2e;
+    /* text light mode */
+    --muted-beige: #d3bfa6;
+    /* text dark mode */
+    --pumpkin-spice: #e07a5f;
+    /* accent light mode */
+    --burnt-orange: #d77a4e;
+    /* accent dark mode */
+    /* secondary use olive green */
+    --forest-green: #4b6b45;
 }
-
-.all {
-    --primary: var(--cool-black);
-    --secondary: var(--light-tan);
-    --accent: var(--dark-gold);
-}
-
-.holiday-sale {
-    --primary: ;
-    --secondary: ;
-    --accent: ;
-}
-
-.halloween {
-    --primary: ;
-    --secondary: ;
-    --accent: ;
-}
-
-.christmas {
-    --primary: ;
-    --secondary: ;
-    --accent: ;
-}
-
-.best-seller {
-    --primary: ;
-    --secondary: ;
-    --accent: ;
-}
-
-.genre {
-    --primary: ;
-    --secondary: ;
-    --accent: ;
-}
-
-.informational {
-    --primary: ;
-    --secondary: ;
-    --accent: ;
-}
-
-.horror {
-    --primary: ;
-    --secondary: ;
-    --accent: ;
-}
-
-.fantasy {
-    --primary: ;
-    --secondary: ;
-    --accent: ;
-}
-
-.romance {
-    --primary: ;
-    --secondary: ;
-    --accent: ;
-}
-
-#f9cece #1b1c1c #d40609
