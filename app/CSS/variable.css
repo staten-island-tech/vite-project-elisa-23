@@ -93,7 +93,10 @@
     /* -------------------------------- */
 }
 
-.dark {}
+.dark {
+    background-color: var(--midnight-blue);
+}
+
 
 .light {}
 
