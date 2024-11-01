@@ -91,21 +91,61 @@
     --p: ;
     --buttons;
     /* -------------------------------- */
+    /* FONTS */
 }
 
 .dark {
-    background-color: var(--midnight-blue);
+    --primary: var(--midnight-blue);
+    --secondary: var(--lavender);
+    --text: var(--warm-gray);
+    --accent: var(--soft-gold);
+    --clicked: var(--soft-gold-clicked);
 }
 
+.light {
+    --primary: var(--soft-cream);
+    --secondary: var(--dusty-lavender);
+    --text: var(--deep-indigo);
+    --accent: var(--soft-gold);
+    --clicked: var(--soft-gold-clicked);
+}
 
-.light {}
+.sepia {
+    --primary: var(--antique-white);
+    --secondary: var(--olive-green);
+    --text: var(--dark-charcoal);
+    --accent: var(--burnished-gold);
+    --clicked: var(--burnished-gold-clicked);
+}
 
-.sepia {}
+.twilight {
+    --primary: var(--soft-lavender-gray);
+    --secondary: var(--dusky-blue);
+    --text: var(--charcoal);
+    --accent: var(--muted-gold);
+    --clicked: var(--muted-gold-clicked);
+}
 
-.twilight {}
+.moonlight {
+    --primary: var(--cool-midnight-blue);
+    --secondary: var(--pale-silver);
+    --text: var(--soft-white);
+    --accent: var(--icy-blue);
+    --clicked: var(--icy-blue-clicked);
+}
 
-.moonlight {}
+.autumn-light {
+    --primary: var(--warm-beige);
+    --secondary: var(--olive-green);
+    --text: var(--deep-expresso);
+    --accent: var(--pumpkin-spice);
+    --clicked: var(--pumpkin-spice-clicked);
+}
 
-.autumn-light {}
-
-.autumn-dark {}
+.autumn-dark {
+    --primary: var(--deep-walnut-brown);
+    --secondary: var(--forest-green);
+    --text: var(--muted-beige);
+    --accent: var(--burnt-orange);
+    --clicked: var(--burnt-orange-clicked);
+}
