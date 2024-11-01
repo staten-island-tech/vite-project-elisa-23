@@ -301,4 +301,21 @@ const books = [
     }
 ];
 
-export { books };
+const genres = [
+    "Romance",
+    "Holiday - Christmas",
+    "Holiday - Halloween",
+    "Horror",
+    "Fantasy",
+    "Science Fiction",
+    "Adventure",
+    "Informational",
+    "Self-Help",
+    "Finance",
+    "Technology",
+    "Drama",
+    "Mystery",
+    "Thriller"
+];
+
+export { books, genres };

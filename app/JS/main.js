@@ -1,8 +1,28 @@
 import '../CSS/style.css';
-import { books } from './object';
+import { books, genres } from './object';
 
-function cards(books) {
+function cardsTest(books) {
     books.forEach((el) => console.log(el));
 }
 
-cards(books);
+/* cardsTest(books); */
+
+function card(button) {
+
+}
+
+function createCards(button) {
+
+}
+
+function addCards(card) {
+
+}
+
+function removeCards() {
+
+}
+
+function resetSearch() {
+
+}
