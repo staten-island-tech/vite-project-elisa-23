@@ -318,4 +318,12 @@ const genres = [
     "Thriller"
 ];
 
-export { books, genres };
+const authors = [
+
+];
+
+const releaseYear = [
+
+];
+
+export { books };
