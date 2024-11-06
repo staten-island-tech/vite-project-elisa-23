@@ -82,56 +82,68 @@
 
     /* -------------------------------- */
     /* TEXT SIZE */
-    --h1: ;
-    --h2: ;
-    --h3: ;
-    --h4: ;
-    --h5: ;
-    --h6: ;
-    --p: ;
-    --button;
+    --h1: 40rem;
+    --h2: 30rem;
+    --h3: 25rem;
+    --h4: 12rem;
+    --h5: 9rem;
+    --h6: 2.5rem;
+    --p: 1.8rem;
+    --button: 2.6rem;
     /* -------------------------------- */
-    /* FONTS */
 
 }
 
 h1 {
     font-size: var(--h1);
     text-align: center;
+    color: var(--text);
 }
 
 h2 {
     font-size: var(--h2);
     text-align: center;
+    color: var(--text);
 }
 
 h3 {
     font-size: var(--h3);
     text-align: center;
+    color: var(--text);
 }
 
 h4 {
     font-size: var(--h4);
     text-align: center;
+    color: var(--text);
 }
 
 h5 {
     font-size: var(--h5);
     text-align: center;
+    color: var(--text);
 }
 
 h6 {
     font-size: var(--h6);
     text-align: center;
+    color: var(--text);
 }
 
 p {
     font-size: var(--p);
+    color: var(--text);
 }
 
 button {
     font-size: var(--button);
     text-align: center;
+    background-color: var(--primary);
+    color: var(--text);
+}
+
+button:active {
+    background-color: var(--clicked);
 }
 
 .dark {
