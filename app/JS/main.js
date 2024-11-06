@@ -8,32 +8,73 @@ function cardsTest() {
 
 /* cardsTest(); */
 
-function Cards() {
-    const container = document.querySelector(".container");
-    books.forEach((ele) => {
-        const title = ele.title;
-        const genres = ele.genres;
-        const bestSeller = ele.bestSeller;
-        const releaseYear = ele.releaseYear;
-        const price = ele.price;
-        const author = ele.author;
-        const img = ele.imageUrl;
-        const altText = ele.altText;
+const DOMSelectors = {
+    container: document.querySelector(".container"),
+};
+
+function cards() {
+    const container = DOMSelectors.container;
+    books.forEach((book) => {
+        const title = book.title;
+        const genres = book.genres;
+        const bestSeller = book.bestSeller;
+        const releaseYear = book.releaseYear;
+        const price = book.price.toFixed(2);
+        const author = book.author;
+        const img = book.imageUrl;
+        const altText = book.altText;
         container.insertAdjacentHTML("beforeend",
             `<div class="card">
-                <h4 class="title">TEXT</h4>
-                <h6 class="author">NAME</h6>
-                <img src="" alt="" class="book-cover">
-                <p class="bestseller">TEXT</p>
-                <p class="genres">TEXT</p>
-                <h5 class="price">TEXT</h5>
-                <div class="cart-button">
-                    <p class="cart-button-text">TEXT</p>
-                </div>
+                <h5 class="title" id="${title}">${title}</h5>
+                <h6 class="author">${author}</h6>
+                <p class="bestseller">${releaseYear}</p>
+                <img src="${img}" alt="${altText}" class="book-cover">
+                <p class="bestseller">Best Seller: ${bestSeller}</p>
+                <p class="genres">${genres}</p>
+                <h5 class="price">${price}</h5>
+                <button class="cart-button">Add to Cart</button>
             </div>
             `
         )
-    })
+    });
 }
 
 Cards();
+
+function removeCards(type, t) {
+    let remove = [];
+    if (type === "genres") {
+        books
+            .filter((book) => book.genres !== t)
+            .forEach((book) => remove.add(book.title));
+    } else if (type === "author") {
+        books
+            .filter((book) => book.author !== t)
+            .forEach((book) => remove.add(book.title));
+    } else if (type === "releaseYear") {
+        books
+            .filter((book) => book.releaseYear !== t)
+            .forEach((book) => remove.add(book.title));
+    } else if (type === "bestSeller") {
+        books
+            .filter((book) => book.bestSeller !== t)
+            .forEach((book) => remove.add(book.title));
+    }
+    console.log(remove);
+    let length = remove.length;
+    for (let i = 0; i < length; i++) {
+        const card = document.getElementsByClassName(remove[0]);
+        card.remove();
+    };
+}
+
+function removeAll() {
+    books.forEach((book) => {
+        const card = document.getElementsByClassName(book.title);
+        card.remove();
+    })
+}
+
+function sale() {
+
+}

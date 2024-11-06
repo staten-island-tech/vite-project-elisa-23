@@ -5,7 +5,6 @@
     --warm-gray: #bdc3c7;
     /* text */
     --soft-gold: #f1c40f;
-    --soft-gold-clicked: #ae8d09;
     /* accent */
     --lavender: #9b59b6;
     /* secondary */
@@ -29,7 +28,6 @@
     --dark-charcoal: #3b3b3b;
     /* text */
     --burnished-gold: #c89f5d;
-    --burnished-gold-clicked: #987946;
     /* accent */
     --olive-green: #a6a57b;
     /* secondary */
@@ -42,7 +40,6 @@
     --charcoal: #2e2e2e;
     /* text */
     --muted-gold: #d4af37;
-    --muted-gold-clicked: #997e27;
     /* accent */
     --dusky-blue: #7289ab;
     /* secondary */
@@ -55,7 +52,6 @@
     --soft-white: #f5f5f5;
     /* text */
     --icy-blue: #8fb8de;
-    --icy-blue-clicked: #64819c;
     /* accent */
     --pale-silver: #c0c5ce;
     /* secondary */
@@ -72,24 +68,22 @@
     --muted-beige: #d3bfa6;
     /* text dark mode */
     --pumpkin-spice: #e07a5f;
-    --pumpkin-spice-clicked: #9c5541;
     /* accent light mode */
     --burnt-orange: #d77a4e;
-    --burnt-orange-clicked: #874c30;
     /* accent dark mode */
     /* secondary use olive green */
     --forest-green: #4b6b45;
 
     /* -------------------------------- */
     /* TEXT SIZE */
-    --h1: 40rem;
-    --h2: 30rem;
-    --h3: 25rem;
-    --h4: 12rem;
-    --h5: 9rem;
+    --h1: 21rem;
+    --h2: 15rem;
+    --h3: 11rem;
+    --h4: 7rem;
+    --h5: 5rem;
     --h6: 2.5rem;
-    --p: 1.8rem;
-    --button: 2.6rem;
+    --p: 1.4rem;
+    --button: 2.3rem;
     /* -------------------------------- */
 
 }
@@ -140,10 +134,12 @@ button {
     text-align: center;
     background-color: var(--primary);
     color: var(--text);
+    border: none;
 }
 
 button:active {
-    background-color: var(--clicked);
+    color: var(--primary);
+    background-color: var(--accent);
 }
 
 .dark {
@@ -151,7 +147,6 @@ button:active {
     --secondary: var(--lavender);
     --text: var(--warm-gray);
     --accent: var(--soft-gold);
-    --clicked: var(--soft-gold-clicked);
 }
 
 .light {
@@ -159,7 +154,6 @@ button:active {
     --secondary: var(--dusty-lavender);
     --text: var(--deep-indigo);
     --accent: var(--soft-gold);
-    --clicked: var(--soft-gold-clicked);
 }
 
 .sepia {
@@ -167,7 +161,6 @@ button:active {
     --secondary: var(--olive-green);
     --text: var(--dark-charcoal);
     --accent: var(--burnished-gold);
-    --clicked: var(--burnished-gold-clicked);
 }
 
 .twilight {
@@ -175,7 +168,6 @@ button:active {
     --secondary: var(--dusky-blue);
     --text: var(--charcoal);
     --accent: var(--muted-gold);
-    --clicked: var(--muted-gold-clicked);
 }
 
 .moonlight {
@@ -183,7 +175,6 @@ button:active {
     --secondary: var(--pale-silver);
     --text: var(--soft-white);
     --accent: var(--icy-blue);
-    --clicked: var(--icy-blue-clicked);
 }
 
 .autumn-light {
@@ -191,7 +182,6 @@ button:active {
     --secondary: var(--olive-green);
     --text: var(--deep-expresso);
     --accent: var(--pumpkin-spice);
-    --clicked: var(--pumpkin-spice-clicked);
 }
 
 .autumn-dark {
@@ -199,5 +189,4 @@ button:active {
     --secondary: var(--forest-green);
     --text: var(--muted-beige);
     --accent: var(--burnt-orange);
-    --clicked: var(--burnt-orange-clicked);
 }
