@@ -8,7 +8,8 @@ function cardsTest() {
 /* cardsTest(); */
 
 const DOMSelectors = {
-    container: document.querySelector(".container")
+    container: document.querySelector(".container"),
+    genres: document.querySelectorAll(".genres")
 };
 
 function addAllCards() {
@@ -26,55 +27,62 @@ function addAllCards() {
                 <button class="cart-button">Add to Cart</button>
             </div>
             `
-        )
+        );
     });
 }
 
 addAllCards();
 
-function addFilteredCards(type, t) {
-    let cards = [];
+function removeCards(type, t) {
+    let remove = [];
     if (type === "genres") {
         books
-            .filter((book) => book.genres.includes(t) === true)
+            .filter((book) => book.genres.includes(t) === false)
             .forEach((book) => remove.push(book.title));
     } else if (type === "author") {
         books
-            .filter((book) => book.author === t)
+            .filter((book) => book.author !== t)
             .forEach((book) => remove.push(book.title));
     } else if (type === "releaseYear") {
         books
-            .filter((book) => book.releaseYear === t)
+            .filter((book) => book.releaseYear !== t)
             .forEach((book) => remove.push(book.title));
     } else if (type === "bestSeller") {
         books
-            .filter((book) => book.bestSeller === t)
+            .filter((book) => book.bestSeller !== t)
             .forEach((book) => remove.push(book.title));
     }
-    console.log(cards);
-    cards.forEach((card) => {
-        container.insertAdjacentHTML("beforeend",
-            `<div class="card" id="${card.title}">
-                <h5 class="title">${card.title}</h5>
-                <h6 class="author">${card.author}</h6>
-                <p class="bestseller">${card.releaseYear}</p>
-                <img src="${card.img}" alt="${card.altText}" class="book-cover">
-                <p class="bestseller">Best Seller: ${card.bestSeller}</p>
-                <p class="genres">${card.genres}</p>
-                <h5 class="price">${card.price.toFixed(2)}</h5>
-                <button class="cart-button">Add to Cart</button>
-            </div>
-            `
-        );
-    });
-}
-
-function removeAll() {
-    books.forEach((book) => {
-        const card = document.getElementById(book.title);
+    console.log(remove);
+    remove.forEach((id) => {
+        const card = document.getElementById(id);
         card.remove();
     })
 }
+
+function addGenres() {
+    DOMSelectors.genres.forEach((genre) => {
+        genre.addEventListener("click", function (event) {
+            event.preventDefault();
+            genre.style.background = "var(--accent)";
+            genre.style.color = "var(--primary)";
+            const id = genre.getAttribute("id");
+            console.log(id);
+            DOMSelectors.genres.forEach((ele) => {
+                if (ele.getAttribute("id") !== id) {
+                    if (ele.style.background !== "var(--primary)") {
+                        ele.style.background = "var(--primary)";
+                        ele.style.color = "var(--text)";
+                    }
+                }
+            });
+            DOMSelectors.container.replaceChildren();
+            addAllCards();
+            removeCards("genre", id);
+        });
+    })
+}
+
+addGenres();
 
 function sale() {
 
