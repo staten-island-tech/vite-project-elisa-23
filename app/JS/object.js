@@ -1,7 +1,7 @@
 const books = [
     {
         title: "Winter Whispers",
-        genres: ["Romance", "Holiday - Christmas"],
+        genres: ["Romance", "Holiday-Christmas"],
         bestSeller: true,
         releaseYear: 2022,
         price: 12.99,
@@ -11,7 +11,7 @@ const books = [
     },
     {
         title: "Under the Mistletoe",
-        genres: ["Romance", "Holiday - Christmas"],
+        genres: ["Romance", "Holiday-Christmas"],
         bestSeller: true,
         releaseYear: 2021,
         price: 15.99,
@@ -21,7 +21,7 @@ const books = [
     },
     {
         title: "Harvest Nights",
-        genres: ["Holiday - Halloween", "Horror"],
+        genres: ["Holiday-Halloween", "Horror"],
         bestSeller: false,
         releaseYear: 2020,
         price: 10.99,
@@ -151,7 +151,7 @@ const books = [
     },
     {
         title: "The Winter Witch",
-        genres: ["Fantasy", "Holiday - Christmas"],
+        genres: ["Fantasy", "Holiday-Christmas"],
         bestSeller: false,
         releaseYear: 2023,
         price: 13.50,
@@ -303,8 +303,8 @@ const books = [
 
 const genres = [
     "Romance",
-    "Holiday - Christmas",
-    "Holiday - Halloween",
+    "Holiday-Christmas",
+    "Holiday-Halloween",
     "Horror",
     "Fantasy",
     "Science Fiction",

@@ -1,14 +1,22 @@
 import '../CSS/style.css';
+import { filteredCardsGenre, filteredCardsAuthor } from './main';
 
 const DOMSelectors = {
     container: document.querySelector("#more"),
     genres: document.querySelector("#genres"),
+    authors: document.querySelector("#authors")
 
 }
 
+function filters() {
+    genres();
+    authors();
+}
+
+filters();
+
 function genres() {
-    DOMSelectors.genres.addEventListener("click", function (event) {
-        event.preventDefault();
+    DOMSelectors.genres.addEventListener("click", function () {
         DOMSelectors.container.replaceChildren();       //replaces everything inside the div with what is in the parenthesis (prevents repetition of buttons)
         DOMSelectors.container.insertAdjacentHTML("beforeend",
             `<button class="genres" id="Romance">Romance</button>
@@ -26,7 +34,20 @@ function genres() {
                 <button class="genres" id="Mystery">Mystery</button>
                 <button class="genres" id="Thriller">Thriller</button>`
         );
+        filteredCardsGenre();
     })
 }
 
-genres();
+function authors() {
+    DOMSelectors.authors.addEventListener("click", function () {
+        DOMSelectors.container.replaceChildren();
+        DOMSelectors.container.insertAdjacentHTML("beforeend",
+            `<button class="authors" id="ER">Emma Roberts</button>
+                <button class="authors" id="NJ">Noah James</button>
+                <button class="authors" id="LP">Liam Porter</button>
+                <button class="authors" id="SC">Sophia Clark</button>
+                <button class="authors" id="MB">Michael Brooks</button>`
+        );
+        filteredCardsAuthor();
+    })
+}
