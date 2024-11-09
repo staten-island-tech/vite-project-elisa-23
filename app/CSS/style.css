@@ -13,9 +13,45 @@ body {
   background-color: var(--primary);
 }
 
+.navi-bar {
+  height: 10rem;
+  background-color: var(--secondary);
+  margin-bottom: 5rem;
+  top: 0;
+  position: sticky;
+  z-index: 999;
+  align-items: center;
+}
+
+#navi-logo {
+  height: 7.5rem;
+  width: 7.5rem;
+  position: absolute;
+  top: 15%;
+  left: 1%;
+  border-radius: 20px;
+}
+
+.reset {
+  height: 7.5rem;
+  width: 7.5rem;
+  border-radius: 60px;
+  position: absolute;
+  top: 15%;
+  right: 1%;
+  text-align: center;
+}
+
+#navi-title {
+  position: absolute;
+  top: 23%;
+  left: 8%;
+  font-size: 5rem;
+}
+
 .container {
   display: flex;
-  height: 90vw;
+  height: 440vw;
   margin: 2rem auto;
   flex-direction: row;
   justify-content: space-around;
@@ -23,7 +59,7 @@ body {
 }
 
 .card {
-  width: 22%;
+  width: 27%;
   height: 70rem;
   border-radius: 10px;
   background-color: var(--secondary);
@@ -33,6 +69,18 @@ body {
   justify-content: space-evenly;
   margin-top: 5rem;
   transition: all 0.75s;
+}
+
+.book-cover {
+  width: 90%;
+  height: 45%;
+  object-fit: cover;
+  object-position: 50% 5%;
+  transition: all 1.5s;
+}
+
+.book-cover:hover {
+  object-position: 50% 100%;
 }
 
 .displaysOrFilters {
@@ -58,22 +106,30 @@ body {
 }
 
 .genres {
-  height: 5rem;
-  width: 13%;
+  height: 6rem;
+  width: 40%;
   border-radius: 20px;
 }
 
 .authors {
-  height: 7.5rem;
+  height: 4rem;
+  width: 23%;
+  border-radius: 20px;
+}
+
+.years {
+  height: 4rem;
   width: 18%;
   border-radius: 20px;
 }
+
+.genres {}
 
 #more {
   height: 14rem;
 }
 
-.special {
+#sales {
   width: 100%;
   height: 5rem;
 }

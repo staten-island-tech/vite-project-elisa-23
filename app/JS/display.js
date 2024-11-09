@@ -1,5 +1,3 @@
-import '../CSS/style.css';
-
 const DOMSelectors = {
     html: document.querySelector("html"),
     dark: document.querySelector("#dark"),
@@ -9,7 +7,7 @@ const DOMSelectors = {
     twilight: document.querySelector("#twilight"),
     autumnLight: document.querySelector("#autumn-light"),
     autumnDark: document.querySelector("#autumn-dark")
-}
+};
 
 function display() {
     dark();
@@ -31,17 +29,7 @@ function changeDisplay(type) {
 function dark() {
     DOMSelectors.dark.addEventListener("click", function (event) {
         event.preventDefault();
-        DOMSelectors.dark.style.background = "var(--accent)";
-        DOMSelectors.dark.style.color = "var(--primary)";
-        const buttons = [DOMSelectors.dark, DOMSelectors.light, DOMSelectors.twilight, DOMSelectors.moonlight, DOMSelectors.sepia, DOMSelectors.autumnDark, DOMSelectors.autumnLight];
-        buttons.forEach((button) => {
-            if (button !== DOMSelectors.dark) {
-                if (button.style.background !== "var(--primary)") {
-                    button.style.background = "var(--primary)";
-                    button.style.color = "var(--text)";
-                }
-            }
-        });
+        resetColors(DOMSelectors.dark);
         changeDisplay("dark");
     })
 }
@@ -49,17 +37,7 @@ function dark() {
 function light() {
     DOMSelectors.light.addEventListener("click", function (event) {
         event.preventDefault();
-        DOMSelectors.light.style.background = "var(--accent)";
-        DOMSelectors.light.style.color = "var(--primary)";
-        const buttons = [DOMSelectors.dark, DOMSelectors.light, DOMSelectors.twilight, DOMSelectors.moonlight, DOMSelectors.sepia, DOMSelectors.autumnDark, DOMSelectors.autumnLight];
-        buttons.forEach((button) => {
-            if (button !== DOMSelectors.light) {
-                if (button.style.background !== "var(--primary)") {
-                    button.style.background = "var(--primary)";
-                    button.style.color = "var(--text)";
-                }
-            }
-        });
+        resetColors(DOMSelectors.light);
         changeDisplay("light");
     })
 }
@@ -67,17 +45,7 @@ function light() {
 function sepia() {
     DOMSelectors.sepia.addEventListener("click", function (event) {
         event.preventDefault();
-        DOMSelectors.sepia.style.background = "var(--accent)";
-        DOMSelectors.sepia.style.color = "var(--primary)";
-        const buttons = [DOMSelectors.dark, DOMSelectors.light, DOMSelectors.twilight, DOMSelectors.moonlight, DOMSelectors.sepia, DOMSelectors.autumnDark, DOMSelectors.autumnLight];
-        buttons.forEach((button) => {
-            if (button !== DOMSelectors.sepia) {
-                if (button.style.background !== "var(--primary)") {
-                    button.style.background = "var(--primary)";
-                    button.style.color = "var(--text)";
-                }
-            }
-        });
+        resetColors(DOMSelectors.sepia);
         changeDisplay("sepia");
     })
 }
@@ -85,17 +53,7 @@ function sepia() {
 function moonlight() {
     DOMSelectors.moonlight.addEventListener("click", function (event) {
         event.preventDefault();
-        DOMSelectors.moonlight.style.background = "var(--accent)";
-        DOMSelectors.moonlight.style.color = "var(--primary)";
-        const buttons = [DOMSelectors.dark, DOMSelectors.light, DOMSelectors.twilight, DOMSelectors.moonlight, DOMSelectors.sepia, DOMSelectors.autumnDark, DOMSelectors.autumnLight];
-        buttons.forEach((button) => {
-            if (button !== DOMSelectors.moonlight) {
-                if (button.style.background !== "var(--primary)") {
-                    button.style.background = "var(--primary)";
-                    button.style.color = "var(--text)";
-                }
-            }
-        });
+        resetColors(DOMSelectors.moonlight);
         changeDisplay("moonlight");
     })
 }
@@ -103,17 +61,7 @@ function moonlight() {
 function twilight() {
     DOMSelectors.twilight.addEventListener("click", function (event) {
         event.preventDefault();
-        DOMSelectors.twilight.style.background = "var(--accent)";
-        DOMSelectors.twilight.style.color = "var(--primary)";
-        const buttons = [DOMSelectors.dark, DOMSelectors.light, DOMSelectors.twilight, DOMSelectors.moonlight, DOMSelectors.sepia, DOMSelectors.autumnDark, DOMSelectors.autumnLight];
-        buttons.forEach((button) => {
-            if (button !== DOMSelectors.twilight) {
-                if (button.style.background !== "var(--primary)") {
-                    button.style.background = "var(--primary)";
-                    button.style.color = "var(--text)";
-                }
-            }
-        });
+        resetColors(DOMSelectors.twilight);
         changeDisplay("twilight");
     })
 }
@@ -121,17 +69,7 @@ function twilight() {
 function autumnLight() {
     DOMSelectors.autumnLight.addEventListener("click", function (event) {
         event.preventDefault();
-        DOMSelectors.autumnLight.style.background = "var(--accent)";
-        DOMSelectors.autumnLight.style.color = "var(--primary)";
-        const buttons = [DOMSelectors.dark, DOMSelectors.light, DOMSelectors.twilight, DOMSelectors.moonlight, DOMSelectors.sepia, DOMSelectors.autumnDark, DOMSelectors.autumnLight];
-        buttons.forEach((button) => {
-            if (button !== DOMSelectors.autumnLight) {
-                if (button.style.background !== "var(--primary)") {
-                    button.style.background = "var(--primary)";
-                    button.style.color = "var(--text)";
-                }
-            }
-        });
+        resetColors(DOMSelectors.autumnLight);
         changeDisplay("autumn-light");
     })
 }
@@ -139,17 +77,22 @@ function autumnLight() {
 function autumnDark() {
     DOMSelectors.autumnDark.addEventListener("click", function (event) {
         event.preventDefault();
-        DOMSelectors.autumnDark.style.background = "var(--accent)";
-        DOMSelectors.autumnDark.style.color = "var(--primary)";
-        const buttons = [DOMSelectors.dark, DOMSelectors.light, DOMSelectors.twilight, DOMSelectors.moonlight, DOMSelectors.sepia, DOMSelectors.autumnDark, DOMSelectors.autumnLight];
-        buttons.forEach((button) => {
-            if (button !== DOMSelectors.autumnDark) {
-                if (button.style.background !== "var(--primary)") {
-                    button.style.background = "var(--primary)";
-                    button.style.color = "var(--text)";
-                }
-            }
-        });
+        resetColors(DOMSelectors.autumnDark);
         changeDisplay("autumn-dark");
     })
+}
+
+function resetColors(type) {
+    const btns = [DOMSelectors.twilight, DOMSelectors.autumnDark, DOMSelectors.autumnLight, DOMSelectors.light, DOMSelectors.dark, DOMSelectors.sepia, DOMSelectors.moonlight];
+    btns.forEach((btn) => {
+        if (btn !== type) {
+            if (btn.style.background !== "var(--primary)") {
+                btn.style.background = "var(--primary)";
+                btn.style.color = "var(--text)";
+            }
+        } else {
+            btn.style.background = "var(--accent)";
+            btn.style.color = "var(--primary)";
+        }
+    });
 }

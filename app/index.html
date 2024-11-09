@@ -3,15 +3,18 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="icon" type="image/webp" href="/logo.webp" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Starlit Epics</title>
 </head>
 
 <body>
   <div class="navi-bar">
-    <img src="" alt="" class="logo">
-    <h3 id="navi-title"></h3>
+    <img src="/logo.webp"
+      alt="Minimalist logo for 'Starlit Epics' bookstore, featuring an open book styled as a shooting star with stars and a crescent moon, evoking a celestial, storytelling theme."
+      id="navi-logo">
+    <h1 id="navi-title">Starlit Epics</h1>
+    <button class="reset">↻</button>
   </div>
   <div class="displaysOrFilters">
     <button class="options" id="light">Light</button>
@@ -23,12 +26,12 @@
     <button class="options" id="autumn-dark">Autumn Dark</button>
   </div>
   <div class="displaysOrFilters">
-    <button class="special" id="sales">Sales</button>
+    <button id="sales">Sales</button>
   </div>
   <div class="displaysOrFilters">
     <button class="options" id="authors">Authors</button>
     <button class="options" id="bestseller">Best Sellers</button>
-    <button class="options" id="release year">Release Year</button>
+    <button class="options" id="release-year">Release Year</button>
     <button class="options" id="genres">Genre</button>
   </div>
   <div class="displaysOrFilters" id="more">
@@ -39,7 +42,7 @@
     <button class="genres" id="Holiday-Halloween">Holiday-Halloween</button>
     <button class="genres" id="Horror">Horror</button>
     <button class="genres" id="Fantasy">Fantasy</button>
-    <button class="genres" id="Science Fiction">Science Fiction</button>
+    <button class="genres" id="Sci-fi">Science Fiction</button>
     <button class="genres" id="Adventure">Adventure</button>
     <button class="genres" id="Informational">Informational</button>
     <button class="genres" id="Self-Help">Self-Help</button>
@@ -83,6 +86,7 @@
   <script type="module" src="./JS/main.js"></script>
   <script type="module" src="./JS/display.js"></script>
   <script type="module" src="./JS/filters.js"></script>
+  <script type="module" src="./JS/sale.js"></script>
 </body>
 
 </html>
