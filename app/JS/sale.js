@@ -29,7 +29,7 @@ function sales() {
                         <p class="book-bestseller">Best Seller: ${book.bestSeller}</p>
                         <p class="book-genres">${book.genres}</p>
                         <h5 class="book-price">${book.price.toFixed(2)}</h5>
-                        <button class="cart-button">Add to Cart</button>
+                        <button class="cart-button" data-id="0">Add to Cart</button>
                     </div>`
                 );
             })

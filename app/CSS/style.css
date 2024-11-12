@@ -88,6 +88,11 @@ body {
   font-size: 4rem;
 }
 
+.cart-button {
+  width: 11rem;
+  border-radius: 10px;
+}
+
 .displaysOrFilters {
   margin-top: 2rem;
   height: 7rem;
