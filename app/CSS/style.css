@@ -51,7 +51,7 @@ body {
 
 .container {
   display: flex;
-  height: 440vw;
+  height: 400vw;
   margin: 2rem auto;
   flex-direction: row;
   justify-content: space-around;
@@ -60,7 +60,7 @@ body {
 
 .card {
   width: 27%;
-  height: 70rem;
+  height: 60rem;
   border-radius: 10px;
   background-color: var(--secondary);
   display: flex;
@@ -77,10 +77,15 @@ body {
   object-fit: cover;
   object-position: 50% 5%;
   transition: all 1.5s;
+  border-radius: 20px;
 }
 
 .book-cover:hover {
   object-position: 50% 100%;
+}
+
+.book-title {
+  font-size: 4rem;
 }
 
 .displaysOrFilters {
@@ -122,8 +127,6 @@ body {
   width: 18%;
   border-radius: 20px;
 }
-
-.genres {}
 
 #more {
   height: 14rem;

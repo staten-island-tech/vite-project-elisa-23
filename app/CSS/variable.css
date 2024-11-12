@@ -81,7 +81,7 @@
     --h3: 11rem;
     --h4: 7rem;
     --h5: 5rem;
-    --h6: 2.5rem;
+    --h6: 2rem;
     --p: 1.4rem;
     --button: 2.3rem;
     /* -------------------------------- */
@@ -127,6 +127,7 @@ h6 {
 p {
     font-size: var(--p);
     color: var(--text);
+    text-align: center;
 }
 
 button {

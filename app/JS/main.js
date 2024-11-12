@@ -9,8 +9,14 @@ function cardsTest() {
 
 const DOMSelectors = {
     container: document.querySelector(".container"),
+    moreContainer: document.querySelector("#more"),
     resetBtn: document.querySelector(".reset"),
-    html: document.querySelector("html")
+    html: document.querySelector("html"),
+    genres: document.querySelector("#genres"),
+    authors: document.querySelector("#authors"),
+    years: document.querySelector("#release-year"),
+    bestSellers: document.querySelector("#bestseller"),
+    sales: document.querySelector("#sales")
 };
 
 function main() {
@@ -22,9 +28,14 @@ main();
 
 function reset() {
     DOMSelectors.resetBtn.addEventListener("click", function () {
-        location.reload()
-
-    })
+        addAllCards();
+        const btns = [DOMSelectors.authors, DOMSelectors.bestSellers, DOMSelectors.years, DOMSelectors.genres, DOMSelectors.sales];
+        btns.forEach((btn) => {
+            btn.style.background = "var(--primary)";
+            btn.style.color = "var(--text)";
+            DOMSelectors.moreContainer.replaceChildren();
+        });
+    });
 }
 
 function addAllCards() {
@@ -32,13 +43,13 @@ function addAllCards() {
     books.forEach((book) => {
         DOMSelectors.container.insertAdjacentHTML("beforeend",
             `<div class="card" id="${book.title}">
-                <h5 class="title">${book.title}</h5>
-                <h6 class="author">${book.author}</h6>
-                <p class="bestseller">${book.releaseYear}</p>
+                <h5 class="book-title">${book.title}</h5>
+                <h6 class="book-author">${book.author}</h6>
+                <p class="book-year">${book.releaseYear}</p>
                 <img src="${book.imageUrl}" alt="${book.altText}" class="book-cover">
-                <p class="bestseller">Best Seller: ${book.bestSeller}</p>
-                <p class="genres">${book.genres}</p>
-                <h5 class="price">${book.price.toFixed(2)}</h5>
+                <p class="book-bestseller">Best Seller: ${book.bestSeller}</p>
+                <p class="book-genres">${book.genres}</p>
+                <h5 class="book-price">${book.price.toFixed(2)}</h5>
                 <button class="cart-button">Add to Cart</button>
             </div>`
         );
@@ -96,7 +107,7 @@ function addFilteredCards(filtered) {
             `<div class="card" id="${book.title}">
                 <h5 class="book-title">${book.title}</h5>
                 <h6 class="book-author">${book.author}</h6>
-                <p class="book-bestseller">${book.releaseYear}</p>
+                <p class="book-year">${book.releaseYear}</p>
                 <img src="${book.imageUrl}" alt="${book.altText}" class="book-cover">
                 <p class="book-bestseller">Best Seller: ${book.bestSeller}</p>
                 <p class="book-genres">${book.genres + ""}</p>

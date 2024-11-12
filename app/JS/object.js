@@ -36,7 +36,7 @@ const books = [
         releaseYear: 2018,
         price: 10.99,
         author: "Laura Sebastian",
-        imageUrl: "/ashprincess.",
+        imageUrl: "/ashprincess.png",
         altText: "Cover of Ash Princess by Laura Sebastian with a shattered crown and a dark background"
     },
     {
@@ -46,7 +46,7 @@ const books = [
         releaseYear: 2019,
         price: 10.99,
         author: "Laura Sebastian",
-        imageUrl: "/ladysmoke.",
+        imageUrl: "/ladysmoke.png",
         altText: "Cover of Lady Smoke by Laura Sebastian with a billowing smoke design"
     },
     {
@@ -56,7 +56,7 @@ const books = [
         releaseYear: 2020,
         price: 11.99,
         author: "Laura Sebastian",
-        imageUrl: "/emberqueen.",
+        imageUrl: "/emberqueen.png",
         altText: "Cover of Ember Queen by Laura Sebastian showing a glowing ember and crown"
     },
     {
@@ -66,7 +66,7 @@ const books = [
         releaseYear: 2018,
         price: 12.99,
         author: "Holly Black",
-        imageUrl: "/thecruelprince.",
+        imageUrl: "/thecruelprince.png",
         altText: "Cover of The Cruel Prince by Holly Black with a dark forest and golden lettering"
     },
     {
@@ -76,7 +76,7 @@ const books = [
         releaseYear: 2019,
         price: 12.99,
         author: "Holly Black",
-        imageUrl: "https://example.com/the-wicked-king.jpg",
+        imageUrl: "/thewickedking.png",
         altText: "Cover of The Wicked King by Holly Black with an underwater crown and waves"
     },
     {
@@ -86,7 +86,7 @@ const books = [
         releaseYear: 2019,
         price: 13.99,
         author: "Holly Black",
-        imageUrl: "https://example.com/the-queen-of-nothing.jpg",
+        imageUrl: "/thequeenofnothing.png",
         altText: "Cover of The Queen of Nothing by Holly Black with a broken crown in the snow"
     },
     {
@@ -96,7 +96,7 @@ const books = [
         releaseYear: 2018,
         price: 14.99,
         author: "Tomi Adeyemi",
-        imageUrl: "https://example.com/children-of-blood-and-bone.jpg",
+        imageUrl: "/childrenofbloodandbone.png",
         altText: "Cover of Children of Blood and Bone by Tomi Adeyemi with a fierce girl and tribal patterns"
     },
     {
@@ -106,7 +106,7 @@ const books = [
         releaseYear: 2019,
         price: 14.99,
         author: "Tomi Adeyemi",
-        imageUrl: "https://example.com/children-of-virtue-and-vengeance.jpg",
+        imageUrl: "/childrenofvirtueandvengeance.png",
         altText: "Cover of Children of Virtue and Vengeance by Tomi Adeyemi with magical symbols and a fierce girl"
     },
     {
@@ -116,7 +116,7 @@ const books = [
         releaseYear: 2012,
         price: 10.99,
         author: "Leigh Bardugo",
-        imageUrl: "https://example.com/shadow-and-bone.jpg",
+        imageUrl: "/shadowandbone.png",
         altText: "Cover of Shadow and Bone by Leigh Bardugo with antlers on a dark background"
     },
     {
@@ -126,7 +126,7 @@ const books = [
         releaseYear: 2013,
         price: 10.99,
         author: "Leigh Bardugo",
-        imageUrl: "https://example.com/siege-and-storm.jpg",
+        imageUrl: "/siegeandstorm.png",
         altText: "Cover of Siege and Storm by Leigh Bardugo with a stormy sky and mystical creatures"
     },
     {
@@ -136,7 +136,7 @@ const books = [
         releaseYear: 2014,
         price: 10.99,
         author: "Leigh Bardugo",
-        imageUrl: "https://example.com/ruin-and-rising.jpg",
+        imageUrl: "/ruinandrising.png",
         altText: "Cover of Ruin and Rising by Leigh Bardugo showing an ancient palace and a dark sky"
     },
     {
@@ -146,7 +146,7 @@ const books = [
         releaseYear: 2015,
         price: 11.99,
         author: "Sabaa Tahir",
-        imageUrl: "https://example.com/an-ember-in-the-ashes.jpg",
+        imageUrl: "/anemberintheashes.png",
         altText: "Cover of An Ember in the Ashes by Sabaa Tahir with a shadowy city and flames"
     },
     {
@@ -156,7 +156,7 @@ const books = [
         releaseYear: 2016,
         price: 11.99,
         author: "Sabaa Tahir",
-        imageUrl: "https://example.com/a-torch-against-the-night.jpg",
+        imageUrl: "/atorchagainstthenight.png",
         altText: "Cover of A Torch Against the Night by Sabaa Tahir with a dark forest and torch"
     },
     {
@@ -166,7 +166,7 @@ const books = [
         releaseYear: 2019,
         price: 13.99,
         author: "Roshani Chokshi",
-        imageUrl: "https://example.com/the-gilded-wolves.jpg",
+        imageUrl: "/thegildedwolves.png",
         altText: "Cover of The Gilded Wolves by Roshani Chokshi with golden vines and mystical symbols"
     },
     {
@@ -176,18 +176,18 @@ const books = [
         releaseYear: 2020,
         price: 13.99,
         author: "Roshani Chokshi",
-        imageUrl: "https://example.com/the-silvered-serpents.jpg",
+        imageUrl: "/thesilveredserpents.png",
         altText: "Cover of The Silvered Serpents by Roshani Chokshi with a silver dragon and icy details"
     },
     {
-        title: "The Bronze Beasts",
+        title: "The Bronzed Beasts",
         genres: ["Fantasy", "Young Adult"],
         bestSeller: true,
         releaseYear: 2021,
         price: 14.99,
         author: "Roshani Chokshi",
-        imageUrl: "https://example.com/the-bronze-beasts.jpg",
-        altText: "Cover of The Bronze Beasts by Roshani Chokshi with a bronze background and intricate designs"
+        imageUrl: "/thebronzedbeasts.png",
+        altText: "Cover of The Bronzed Beasts by Roshani Chokshi with a bronze background and intricate designs"
     },
     {
         title: "Red Queen",
@@ -196,7 +196,7 @@ const books = [
         releaseYear: 2015,
         price: 10.99,
         author: "Victoria Aveyard",
-        imageUrl: "https://example.com/red-queen.jpg",
+        imageUrl: "/redqueen.png",
         altText: "Cover of Red Queen by Victoria Aveyard with a blood-dripping crown on a white background"
     },
     {
@@ -206,7 +206,7 @@ const books = [
         releaseYear: 2016,
         price: 10.99,
         author: "Victoria Aveyard",
-        imageUrl: "https://example.com/glass-sword.jpg",
+        imageUrl: "/glasssword.png",
         altText: "Cover of Glass Sword by Victoria Aveyard with a shattered crown on a gray background"
     },
     {
@@ -216,7 +216,7 @@ const books = [
         releaseYear: 2017,
         price: 10.99,
         author: "Victoria Aveyard",
-        imageUrl: "https://example.com/kings-cage.jpg",
+        imageUrl: "/kingscage.png",
         altText: "Cover of King's Cage by Victoria Aveyard with an iron cage and crown"
     }
 ];
